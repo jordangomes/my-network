@@ -55,3 +55,9 @@
      sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data cr.portainer.io/portainer/portainer-ce:latest
      ```
   4. Navigate to https://192.168.1.254:9443/ and complete the setup(make sure to record login details in password manager)
+
+## Pi Hole Setup
+ 1. In Portainer fold down "App Templates" and click "Custom Templates"
+ 2. Add a custom template called "pihole", add a description and paste the contents of [pihole-compose.yml](pihole-compose.yml) then update the WEBPASSWORD variable and create the temlate
+ 3. Click on the "pihole" template you just created and click "Deploy the stack"
+ 4. Login to EdgeRouter and go to Services>DHCP and delete the DHCP service
