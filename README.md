@@ -62,3 +62,4 @@
  2. Add a custom template called "pihole", add a description and paste the contents of [pihole-compose.yml](pihole-compose.yml) then update the WEBPASSWORD variable and create the temlate
  3. Click on the "pihole" template you just created and click "Deploy the stack"
  4. Login to EdgeRouter and go to Services>DHCP and delete the DHCP service
+ 5. Verify you can log into the pihole interface from https://192.168.1.254/admin
