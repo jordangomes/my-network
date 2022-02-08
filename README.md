@@ -17,7 +17,8 @@
  12. Open the bottom menu and click the System Tab and update the Timezone 
  13. In a new tab navigate to http://www.ubnt.com/download and download the latest firmware (EdgeRouter X SFP)
  14. Back in the router interface upload the latest firmware and wait for the update to complete (confirm reboot if necessary)
-
+ 15. Navigate to https://192.168.1.1/ in browser again and login
+ 16. Enable POE for the port connected to the UniFi Access Point
 
 ## Raspberry Pi Setup (Docker and Portainer)
  ### Pi Setup
