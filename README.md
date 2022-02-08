@@ -29,7 +29,7 @@
   6. Finally select the settings cog and tick "Enable SSH" and update the username and password as well as the locale settings
   7. Exit the advanced settings, Click "WRITE" then wait for the image to be written
   8. Once the image has been written plug the SD Card into the PI and connect power and ethernet
-  9. Using the EdgeRouter interface (Services>DHCP) or nmap find the Raspberry pi's IP Address `sudo nmap -O 192.168.1.1/24`
+  9. Using the EdgeRouter interface (Services>DHCP) or nmap find the Raspberry Pi's IP Address `sudo nmap -O 192.168.1.1/24`
   10. ssh into the Raspberry Pi `ssh {ip} -l {username}`
   11. Run `sudo apt update` and `sudo apt full-upgrade`
   12. Edit `/etc/dhcpcd.conf` and add the following lines to set a static IP address
@@ -39,7 +39,7 @@
         static routers=192.168.1.1/24
         static domain_name_servers=1.1.1.1
         ```
-  13. Reboot the pi and once rebooted try ssh'ing into it with new IP(192.168.1.254)
+  13. Reboot the Pi and once rebooted try ssh'ing into it with new IP(192.168.1.254)
  ### Docker/Portainer Setup 
   1. Run the following commands and wait for docker to install
      ```
