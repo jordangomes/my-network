@@ -39,20 +39,19 @@
         static routers=192.168.1.1/24
         static domain_name_servers=1.1.1.1
         ```
- 13. Reboot the pi and once rebooted try ssh'ing into it with new IP(192.168.1.254)
+  13. Reboot the pi and once rebooted try ssh'ing into it with new IP(192.168.1.254)
  ### Docker/Portainer Setup 
- 1. Run the following commands and wait for docker to install
-    ```
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sudo sh get-docker.sh
-    ```
- 2. To create a volume for portainer - 
-    ```
-    sudo docker volume create portainer_data
-    ```
- 3. Run the following command to install portainer
-
-    ```
-    sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data cr.portainer.io/portainer/portainer-ce:latest
-    ```
- 4. Navigate to https://192.168.1.254:9443/ and complete the setup(make sure to record login details in password manager)
+  1. Run the following commands and wait for docker to install
+     ```
+     curl -fsSL https://get.docker.com -o get-docker.sh
+     sudo sh get-docker.sh
+     ```
+  2. To create a volume for portainer - 
+     ```
+     sudo docker volume create portainer_data
+     ```
+  3. Run the following command to install portainer
+     ```
+     sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data cr.portainer.io/portainer/portainer-ce:latest
+     ```
+  4. Navigate to https://192.168.1.254:9443/ and complete the setup(make sure to record login details in password manager)
