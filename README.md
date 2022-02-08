@@ -26,7 +26,7 @@
   3. Connect SD card to computer and open the Raspberry Pi Imager
   4. Click "CHOOSE OS" and "Use custom" then select the image downloaded in step 2
   5. Click "CHOOSE STORAGE" then select the SD Card
-  6. Finally select the settings cog and tick "Enable SHH" and update the username and password as well as the locale settings
+  6. Finally select the settings cog and tick "Enable SSH" and update the username and password as well as the locale settings
   7. Exit the advanced settings, Click "WRITE" then wait for the image to be written
   8. Once the image has been written plug the SD Card into the PI and connect power and ethernet
   9. Using the EdgeRouter interface (Services>DHCP) or nmap find the Raspberry pi's IP Address `sudo nmap -O 192.168.1.1/24`
