@@ -59,14 +59,14 @@
 
 ## Pi Hole Setup
  1. In Portainer fold down "App Templates" and click "Custom Templates"
- 2. Add a custom template called "pihole", add a description and paste the contents of [pihole-compose.yml](pihole-compose.yml) then update the WEBPASSWORD variable and create the temlate
+ 2. Add a custom template called "pihole", add a description and paste the contents of [pihole-compose.yml](docker-compose/pihole-compose.yml) then update the WEBPASSWORD variable and create the temlate
  3. Click on the "pihole" template you just created and click "Deploy the stack"
  4. Login to EdgeRouter and go to Services>DHCP and delete the DHCP service
  5. Verify you can log into the pihole interface from https://192.168.1.254/admin
 
 ## UniFi Controller Setup
  1. In Portainer fold down "App Templates" and click "Custom Templates"
- 2. Add a custom template called "unifi-controller", add a description and paste the contents of [unifi-controller-compose.yml](unifi-controller-compose.yml) then create the temlate
+ 2. Add a custom template called "unifi-controller", add a description and paste the contents of [unifi-controller-compose.yml](docker-compose/unifi-controller-compose.yml) then create the temlate
  3. Click on the "unifi-controller" template you just created and click "Deploy the stack"
  5. Navigate to https://192.168.1.254:8443 and dismiss the SSL error
  6. Follow the prompts to setup the network (make sure to tick "Combine 2 GHz and 5 GHz WiFi Network Names into one")
